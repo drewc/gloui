@@ -1,0 +1,1 @@
+var blint=require("blint");["mode","lib","addon","keymap"].forEach((function(e){blint.checkDir(e,{browser:!0,allowedGlobals:["CodeMirror","define","test","requirejs","globalThis"],ecmaVersion:5,tabs:"lib"==e})})),["src"].forEach((function(e){blint.checkDir(e,{browser:!0,ecmaVersion:6,semicolons:!1})})),module.exports={ok:blint.success()};
